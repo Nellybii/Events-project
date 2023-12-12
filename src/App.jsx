@@ -6,15 +6,15 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <>
+    <main style={{height: '100vh'}}>
       <NavBar />
-      <Container>
+      <Container >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/addevent" element={<AddEvent />} />
         </Routes>
       </Container>
-    </>
+    </main>
   );
 }
 
